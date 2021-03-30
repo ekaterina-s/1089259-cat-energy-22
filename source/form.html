@@ -12,79 +12,90 @@
       <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Логотип Cat Energy" width="34"
         height="38">
     </a>
-    <h1>Cat Energy</h1>
-    <nav class="main-nav">
+    <h1 class="page-header__title">Cat Energy</h1>
+    <div class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
+      <nav class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">главная</a>
+            <a class="main-nav__item-link" href="index.html">главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">каталог продукции</a>
+            <a class="main-nav__item-link" href="catalog.html">каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">подбор программы</a>
+            <a class="main-nav__item-link" href="form.html">подбор программы</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
     <section class="program-choice">
-      <h1 class="program-choice__title">Подбор программы</h1>
+      <h2 class="program-choice__title">Подбор программы</h2>
       <p class="program-choice__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="program-choice__form form" method="get" action="https://echo.htmlacademy.ru/">
         <fieldset class="form__catdata">
-          <h1 class="visually-hidden">Данные кота</h1>
-          <label>
-            имя:<sup>*</sup> <input type="text" name="catname" placeholder="Барсик">
+          <legend class="visually-hidden">Данные кота</legend>
+          <label class="form__catdata-label">
+            имя:<sup>*</sup> <input class="form__catdata-textfield" type="text" name="catname" placeholder="Барсик"
+              required>
           </label>
-          <label>
-            вес (кг):<sup>*</sup> <input type="number" name="catweight" placeholder="7">
+          <label class="form__catdata-label">
+            вес (кг):<sup>*</sup> <input class="form__catdata-textfield" type="number" name="catweight" placeholder="7"
+              required>
           </label>
-          <label>
-            возраст (лет):<sup>*</sup> <input type="number" name="catage" placeholder="7">
+          <label class="form__catdata-label">
+            возраст (лет):<sup>*</sup> <input class="form__catdata-textfield" type="number" name="catage"
+              placeholder="7" required>
           </label>
         </fieldset>
         <fieldset class="form__program">
-          <h1 class="visually-hidden">Выбор программы</h1>
-          <label>
-            <input type="radio" checked> похудение
+          <legend class="visually-hidden">Выбор программы</legend>
+          <label class="form__program-label">
+            <input class="form__program-choice" type="radio" checked> похудение
           </label>
-          <label>
-            <input type="radio"> набор массы
+          <label class="form__program-label">
+            <input class="form__program-choice" type="radio"> набор массы
           </label>
-          <label>
-            <input type="radio"> не знаю (нужен ваш совет)
+          <label class="form__program-label">
+            <input class="form__program-choice" type="radio"> не знаю (нужен ваш совет)
           </label>
         </fieldset>
         <fieldset class="form__ownerdata">
-          <h1>Контактные данные (владельца кота)</h1>
-          <label>
-            e-mail:<sup>*</sup> <input type="email" name="e-mail" placeholder="kuklachev@gmail.com">
+          <legend class="form__ownerdata-legend">Контактные данные (владельца кота)</legend>
+          <label class="form__ownerdata-label">
+            e-mail:<sup>*</sup> <input class="form__ownerdata-textfield" type="email" name="e-mail"
+              placeholder="kuklachev@gmail.com" required>
           </label>
-          <label>
-            телефон:<sup>*</sup> <input type="tel" name="phone" placeholder="8 (960) 900-60-90">
+          <label class="form__ownerdata-label">
+            телефон:<sup>*</sup> <input class="form__ownerdata-textfield" type="tel" name="phone"
+              placeholder="8 (960) 900-60-90" required>
           </label>
         </fieldset>
         <fieldset class="form__comment">
-          <h1>Комментарий</h1>
-          <textarea name="comment" id="textbox" cols="40" rows="10"
+          <legend class="form__comment-legend">Комментарий</legend>
+          <textarea class="form__comment-textfield" name="comment" id="textbox" cols="40" rows="10"
             placeholder="расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__additions">
-          <h1>Дополнительно</h1>
-          <label>
-            <input type="checkbox"> сахарозаменитель
-            <input type="checkbox"> питьевая вода
-            <input type="checkbox"> молоко
-            <input type="checkbox"> витамины
+          <legend class="form__additions-legend">Дополнительно</legend>
+          <label class="form__additions-label">
+            <input class="form__additions-choice" type="checkbox"> сахарозаменитель
+          </label>
+          <label class="form__additions-label">
+            <input class="form__additions-choice" type="checkbox"> питьевая вода
+          </label>
+          <label class="form__additions-label">
+            <input class="form__additions-choice" type="checkbox"> молоко
+          </label>
+          <label class="form__additions-label">
+            <input class="form__additions-choice" type="checkbox"> витамины
           </label>
         </fieldset>
-        <button type="submit">отправить заявку</button>
+        <button class="form__button" type="submit">отправить заявку</button>
       </form>
-      <p><sup>*</sup>_Обязательные поля</p>
+      <p class="program-choice__obligatory"><sup>*</sup>_Обязательные поля</p>
     </section>
   </main>
   <footer class="page-footer">
