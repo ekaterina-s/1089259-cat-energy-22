@@ -1,0 +1,26 @@
+.example {
+  background-color: $grey-background;
+}
+
+.example__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.example__title {
+  padding: 27px 0 33px 0;
+  font: normal 36px/40px $main-font;
+  color: $basic-black;
+}
+
+.example__description {
+  font: normal 14px/18px $main-font;
+  color: $special-dark-grey;
+}
+
+.example__cost {
+  font: normal 14px/20px $main-font;
+  text-align: center;
+  color: $basic-black;
+  text-transform: uppercase;
+}

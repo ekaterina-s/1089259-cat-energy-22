@@ -1,0 +1,101 @@
+.programs {
+  padding-bottom: 27px;
+
+  .programs__wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .programs__header {
+    background-image: url("../img/programs__header-background.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    text-transform: uppercase;
+
+    .programs__title {
+      padding: 27px 35px 25px 35px;
+      font: normal 36px/36px $main-font;
+      color: $basic-white;
+    }
+
+    .programs__text {
+      padding: 0 61px 29px 61px;
+      color: $basic-white;
+    }
+
+    .programs__choice {
+      text-decoration: none;
+      padding: 8px 44px;
+      font: normal 14px/18px $main-font;
+      color: $basic-white;
+      background-color: $basic-green;
+    }
+  }
+
+  .programs__list {
+    list-style: none;
+  }
+
+  .programs__item {
+    background-color: $basic-grey;
+  }
+
+  .programs__name-1, .programs__name-2 {
+    padding: 30px 79px 22px 91px;
+    font: normal 24px/37px $main-font;
+    color: $basic-black;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .programs__name-1::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    width: 50px;
+    height: 53px;
+    background-image: url("../img/cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .programs__name-2::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 13px;
+    width: 67px;
+    height: 50px;
+    background-image: url("../img/cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .programs__description {
+    padding: 0 33px 23px 20px;
+    font: normal 14px/18px $main-font;
+    color: $special-dark-grey;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .programs__catalog {
+    padding: 15px 127px 18px 19px;
+    font: normal 16px/16px $main-font;
+    color: $basic-black;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .programs__catalog::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 150px;
+    width: 32px;
+    height: 10px;
+    background-image: url("../img/catalog-slim-link.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}

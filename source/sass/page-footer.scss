@@ -1,0 +1,36 @@
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-footer__wrapper {
+  background-color: $basic-grey;
+}
+
+.page-footer__contacts {
+  width: 280px;
+  margin: 0 auto;
+  padding: 28px 0 28px 0;
+  background-color: $basic-white;
+}
+
+.contacts__text {
+  font: normal 16px/18px $main-font;
+  color: $second-black;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font: normal 14px/20px $main-font;
+  color: $special-dark-grey;
+}
+
+.social__list {
+  list-style: none;
+}
+
+.copyright__link {
+  text-decoration: none;
+  font: normal 16px/18.4px $second-font;
+  color: $special-dark-grey;
+}

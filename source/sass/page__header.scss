@@ -1,0 +1,17 @@
+
+.page-header {
+  margin: 12px 21px 24px 21px;
+  font: normal 20px/20px $main-font;
+  color: $basic-black;
+
+  .main-nav__item {
+    list-style: none;
+    margin: 22px 122px 22px 122px;
+    text-align: center;
+  }
+
+  .main-nav__item-link {
+    text-decoration: none;
+    color: $basic-black;
+  }
+}
