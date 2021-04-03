@@ -1,101 +1,69 @@
-.programs {
-  padding-bottom: 27px;
+.programs__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px 0 20px;
+}
 
-  .programs__wrapper {
-    width: 280px;
-    margin: 0 auto;
-  }
+.programs__item {
+  padding: 21px 22px 0 22px;
+  margin-bottom: 20px;
+  background-color: $basic-grey;
+}
 
-  .programs__header {
-    background-image: url("../img/programs__header-background.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    text-transform: uppercase;
+.programs__title {
+  margin-top: 0;
+  font: 24px/27px $main-font;
+  color: $basic-black;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+}
 
-    .programs__title {
-      padding: 27px 35px 25px 35px;
-      font: normal 36px/36px $main-font;
-      color: $basic-white;
-    }
+.programs__title--slim::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 53px;
+  background: url(../img/cat-slim.svg) no-repeat center center;
+  flex-shrink: 0;
+  margin-right: 19px;
+}
 
-    .programs__text {
-      padding: 0 61px 29px 61px;
-      color: $basic-white;
-    }
+.programs__title--pro::before {
+  content: "";
+  display: block;
+  width: 67px;
+  height: 50px;
+  background: url(../img/cat-pro.svg) no-repeat center center;
+  flex-shrink: 0;
+  margin-right: 11px;
+}
 
-    .programs__choice {
-      text-decoration: none;
-      padding: 8px 44px;
-      font: normal 14px/18px $main-font;
-      color: $basic-white;
-      background-color: $basic-green;
-    }
-  }
+.programs__description {
+  font: 14px/18px $second-font;
+  color: $special-dark-grey;
+  padding-bottom: 23px;
+  margin: 0;
+  border-bottom: 1px solid $border-color;
+}
 
-  .programs__list {
-    list-style: none;
-  }
+.programs__catalog {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font: 16px/16px $main-font;
+  color: $basic-black;
+  padding: 19px 0 22px 0;
+  text-transform: uppercase;
+}
 
-  .programs__item {
-    background-color: $basic-grey;
-  }
-
-  .programs__name-1, .programs__name-2 {
-    padding: 30px 79px 22px 91px;
-    font: normal 24px/37px $main-font;
-    color: $basic-black;
-    text-transform: uppercase;
-    position: relative;
-  }
-
-  .programs__name-1::before {
-    content: "";
-    position: absolute;
-    top: 24px;
-    left: 22px;
-    width: 50px;
-    height: 53px;
-    background-image: url("../img/cat-slim.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
-  .programs__name-2::before {
-    content: "";
-    position: absolute;
-    top: 24px;
-    left: 13px;
-    width: 67px;
-    height: 50px;
-    background-image: url("../img/cat-pro.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
-  .programs__description {
-    padding: 0 33px 23px 20px;
-    font: normal 14px/18px $main-font;
-    color: $special-dark-grey;
-    border-bottom: 1px solid $border-color;
-  }
-
-  .programs__catalog {
-    padding: 15px 127px 18px 19px;
-    font: normal 16px/16px $main-font;
-    color: $basic-black;
-    text-transform: uppercase;
-    position: relative;
-  }
-
-  .programs__catalog::after {
-    content: "";
-    position: absolute;
-    top: 18px;
-    left: 150px;
-    width: 32px;
-    height: 10px;
-    background-image: url("../img/catalog-slim-link.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+.programs__catalog::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 10px;
+  background: url(../img/arrow-left.svg) no-repeat center center;
+  flex-shrink: 0;
+  margin-left: 15px;
 }

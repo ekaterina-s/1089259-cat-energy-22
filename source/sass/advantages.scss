@@ -2,20 +2,18 @@
   padding-bottom: 42px;
 }
 
-.advantages__wrapper {
-  width: 280px;
-  margin: 0 auto;
-}
-
 .advantages__title {
-  padding-bottom: 38px;
-  font: normal 36px/40px $main-font;
+  margin: 0;
+  padding: 0 20px 38px 20px;
+  font: 36px/40px $main-font;
   color: $basic-black;
 }
 
 .advantages__list {
-  list-style: none;
-  font: normal 14px/18px $main-font;
+  margin: 0;
+  padding: 0 20px 0 20px;
+  list-style-type: none;
+  font: 14px/18px $second-font;
   color: $special-dark-grey;
 }
 
