@@ -1,0 +1,31 @@
+.main-nav {
+  background-color: $basic-white;
+}
+
+.main-nav__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px 16px 20px;
+}
+
+.main-nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  padding: 0 20px;
+  border-top: 1px solid #E6E6E6;
+}
+
+.main-nav__item-link {
+  display: block;
+  text-decoration: none;
+  color: $basic-black;
+  padding: 22px 0 24px 0;
+  text-align: center;
+  font: 500 20px/20px $main-font;
+  text-transform: uppercase;
+}

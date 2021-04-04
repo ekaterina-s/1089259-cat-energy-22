@@ -1,0 +1,69 @@
+.programs__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px 0 20px;
+}
+
+.programs__item {
+  padding: 21px 22px 0 22px;
+  margin-bottom: 20px;
+  background-color: $basic-grey;
+}
+
+.programs__title {
+  margin-top: 0;
+  font: 24px/27px $main-font;
+  color: $basic-black;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.programs__title--slim::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 53px;
+  background: url(../img/cat-slim.svg) no-repeat center center;
+  flex-shrink: 0;
+  margin-right: 19px;
+}
+
+.programs__title--pro::before {
+  content: "";
+  display: block;
+  width: 67px;
+  height: 50px;
+  background: url(../img/cat-pro.svg) no-repeat center center;
+  flex-shrink: 0;
+  margin-right: 11px;
+}
+
+.programs__description {
+  font: 14px/18px $second-font;
+  color: $special-dark-grey;
+  padding-bottom: 23px;
+  margin: 0;
+  border-bottom: 1px solid $border-color;
+}
+
+.programs__catalog {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font: 16px/16px $main-font;
+  color: $basic-black;
+  padding: 19px 0 22px 0;
+  text-transform: uppercase;
+}
+
+.programs__catalog::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 10px;
+  background: url(../img/arrow-left.svg) no-repeat center center;
+  flex-shrink: 0;
+  margin-left: 15px;
+}
