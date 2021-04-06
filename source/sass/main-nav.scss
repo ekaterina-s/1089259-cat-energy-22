@@ -20,6 +20,10 @@
   border-top: 1px solid #E6E6E6;
 }
 
+.main-nav__item:last-child {
+  border-bottom: 1px solid #E6E6E6;
+}
+
 .main-nav__item-link {
   display: block;
   text-decoration: none;
