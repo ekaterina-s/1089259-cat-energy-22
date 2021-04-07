@@ -102,7 +102,7 @@
     font: 16px/18px $main-font;
     color: $special-dark-grey;
     text-transform: uppercase;
-    padding: 9px 7px 0 7gitpx;
+    padding: 9px 7px 0 7px;
   }
 }
 
@@ -133,7 +133,6 @@
 
 .program-choice__obligatory {
   margin: 0;
-  padding: 0;
   padding: 21px 0 32px 0;
   text-align: center;
   font: 14px/16px $second-font;
