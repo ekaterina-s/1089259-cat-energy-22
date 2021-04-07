@@ -1,0 +1,140 @@
+.form__catdata {
+  border: 0 none;
+  border-bottom: 1px solid $border-color;
+  margin: 0;
+  padding: 0 20px 11px 20px;
+}
+
+.form__catdata-label {
+  display: block;
+  font: 16px/18px $main-font;
+  color: $special-dark-grey;
+  text-transform: uppercase;
+}
+
+.form__catdata-textfield {
+  margin: 0 0 13px 11px;
+  padding: 0;
+  width: 228px;
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid $input-color;
+
+  &::placeholder {
+    font: 16px/18px $main-font;
+    color: $special-dark-grey;
+    text-transform: uppercase;
+    padding-left: 14px;
+  }
+}
+
+.form__program {
+  border: 0 none;
+  border-bottom: 1px solid $border-color;
+  margin: 0;
+  padding: 22px 20px 6px 20px;
+}
+
+.form__program-label {
+  display: block;
+  font: 16px/18px $main-font;
+  color: $special-dark-grey;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.form__ownerdata {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 9px;
+}
+
+.form__ownerdata-legend {
+  margin: 0;
+  padding: 26px 20px 35px 20px;
+  font: 24px/26px $main-font;
+  color: $basic-black;
+}
+
+.form__ownerdata-label {
+  padding: 0 20px 14px 20px;
+  font: 16px/18px $main-font;
+  color: $special-dark-grey;
+  text-transform: uppercase;
+}
+
+.form__ownerdata-textfield {
+  width: 200px;
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid $input-color;
+  margin: 0 0 14px 8px;
+
+  &::placeholder {
+    font: 16px/18px $main-font;
+    color: $special-dark-grey;
+    text-transform: uppercase;
+    padding-left: 16px;
+  }
+}
+
+.form__comment {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__comment-legend {
+  margin: 0;
+  padding: 0 20px 37px 20px;
+  font: 24px/26px $main-font;
+  color: $basic-black;
+}
+
+.form__comment-textfield {
+  box-sizing: border-box;
+  border: 1px solid $input-color;
+  margin: 0 20px 23px 20px;
+  resize: none;
+
+  &::placeholder {
+    font: 16px/18px $main-font;
+    color: $special-dark-grey;
+    text-transform: uppercase;
+    padding: 9px 7px 0 7px;
+  }
+}
+
+.form__additions {
+  border: 0 none;
+  margin: 0;
+  padding: 0 20px 21px 20px;
+}
+
+.form__additions-legend {
+  padding-bottom: 34px;
+}
+
+.form__additions-label {
+  display: block;
+  margin-bottom: 13px;
+  font: 16px/18px $main-font;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.form__button {
+  margin: 0 20px 0 20px;
+  padding: 7px 78px;
+  font: 16px/20px $main-font;
+  border: none;
+}
+
+.program-choice__obligatory {
+  margin: 0;
+  padding: 21px 0 32px 0;
+  text-align: center;
+  font: 14px/16px $second-font;
+  color: $basic-black;
+}

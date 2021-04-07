@@ -6,3 +6,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.button {
+  display: block;
+  text-decoration: none;
+  background-color: $basic-green;
+  color: $basic-white;
+  text-align: center;
+  text-transform: uppercase;
+}

@@ -1,10 +1,11 @@
 .page-footer {
   padding: 28px 0 22px 0;
-}
-
-.page-footer__wrapper {
   background-color: $basic-grey;
 }
+
+// .page-footer__wrapper {
+//   background-color: $basic-grey;
+// }
 
 .page-footer__contacts {
   display: flex;
@@ -30,11 +31,11 @@
   color: $special-dark-grey;
 }
 
-.contacts__location {
+.page-footer__location {
   margin-bottom: 39px;
 }
 
-.contacts__link {
+.page-footer__link {
   display: block;
   text-align: center;
   padding-bottom: 32px;

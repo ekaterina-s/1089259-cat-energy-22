@@ -28,48 +28,48 @@
 
 .advantages__item:first-child::before {
   content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/nutrients.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/nutrients.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .advantages__item:nth-child(2)::before {
   content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/whey.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/whey.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .advantages__item:nth-child(3)::before {
   content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/eating.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/eating.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .advantages__item:last-child::before {
   content: "";
-    position: absolute;
-    top: 0;
-    left: 0px;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/results.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/results.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
