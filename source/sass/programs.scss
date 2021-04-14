@@ -2,22 +2,58 @@
   list-style-type: none;
   margin: 0;
   padding: 0 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding: 0 30px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding: 0 110px 0 110px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .programs__item {
-  padding: 21px 22px 0 22px;
+  padding: 23px 22px 0 21px;
   margin-bottom: 20px;
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding: 77px 61px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+    padding: 41px 51px 55px 52px;
+  }
+}
+
+.programs__item:last-child {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .programs__title {
   margin-top: 0;
+  margin-bottom: 22px;
+  padding: 0;
   font: 24px/27px $main-font;
   color: $basic-black;
   text-transform: uppercase;
-  margin-bottom: 22px;
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font: 36px/36px $main-font;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .programs__title--slim::before {
@@ -28,6 +64,10 @@
   background: url("../img/cat-slim.svg") no-repeat center center;
   flex-shrink: 0;
   margin-right: 19px;
+}
+
+.programs__title--pro {
+  margin-left: -6px;
 }
 
 .programs__title--pro::before {
@@ -43,9 +83,22 @@
 .programs__description {
   font: 14px/18px $second-font;
   color: $special-dark-grey;
-  padding-bottom: 23px;
   margin: 0;
+  padding: 0;
+  padding-bottom: 22px;
   border-bottom: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    font: 16px/24px $second-font;
+    padding: 0;
+    padding-bottom: 48px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 51px 55px 52px;
+    border-bottom: none;
+  }
 }
 
 .programs__catalog {
@@ -56,6 +109,15 @@
   color: $basic-black;
   padding: 19px 0 22px 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font: 20px/29.6px $main-font;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .programs__catalog::after {

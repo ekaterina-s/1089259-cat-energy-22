@@ -11,42 +11,47 @@
 </head>
 
 <body class="page-body">
+  <!-- <img class="test" src="Mobile.jpg" alt=""> -->
   <header class="page-header">
     <div class="main-nav">
       <!-- <div class="container"> -->
       <div class="main-nav__top">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Логотип Cat Energy" width="34"
-            height="38">
-          <img class="page-header__logo-text" src="img/logo-cat-energy.png" alt="Логотип" width="101" height="18">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Логотип Cat Energy" width="34"
+              height="38">
+          </picture>
         </a>
         <!-- <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button> -->
       </div>
-      <nav class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="index.html">главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="catalog.html">каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="form.html">подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="page-header__bottom">
-        <div class="page-header__content">
-          <h2 class="visually-hidden">О питании</h2>
-          <h2 class="page-header__title">Функциональное <br> питание для котов</h2>
-          <p class="page-header__text">Занялся собой? Займись котом!</p>
-          <img class="page-header__image" src="img/chicken-food-index.png" alt="питание со вкусом курицы" width="280"
-            height="270">
-          <a class="button page-header__link" href="#">подобрать программу</a>
-        </div>
-      </div>
-      <!-- </div> -->
+      <!-- <nav class="main-nav__wrapper"> -->
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="index.html">главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="catalog.html">каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="form.html">подбор программы</a>
+        </li>
+      </ul>
+      <!-- </nav> -->
     </div>
+    <div class="page-header__bottom">
+      <div class="page-header__content">
+        <h2 class="visually-hidden">О питании</h2>
+        <h2 class="page-header__title">Функциональное <br> питание для котов</h2>
+        <p class="page-header__text">Занялся собой? Займись котом!</p>
+        <img class="page-header__image" src="img/chicken-food-index.png" alt="питание со вкусом курицы" width="280"
+          height="270">
+        <a class="button page-header__link" href="#">подобрать программу</a>
+      </div>
+    </div>
+    <!-- </div> -->
+    <!-- </div> -->
   </header>
   <main class="page-main">
     <section class="programs">
@@ -90,11 +95,11 @@
           без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
         <div class="example__results">
           <div class="example__results-weight">
-            <p class="example__result">5 кг</p>
+            <p class="example__result weight">5 кг</p>
             <p class="example__result-description">снижение веса</p>
           </div>
           <div class="example__results-time">
-            <p class="example__result">60 дней</p>
+            <p class="example__result time">60 дней</p>
             <p class="example__result-description">затрачено времени</p>
           </div>
         </div>
@@ -112,11 +117,14 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__contacts contacts">
-      <p class="contacts__text">приглашаем к <br> сотрудничеству дилеров!</p>
+      <p class="contacts__text">приглашаем <br> к сотрудничеству дилеров!</p>
       <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
+    <picture>
+      <source media="(min-width: 798px)" srcset="img/location-tablet.jpg">
     <img class="page-footer__location" src="img/location.jpg" alt="Расположение Cat Energy на карте" width="320"
       height="362">
+    </picture>
     <a class="page-footer__link" href="index.html">
       <img class="page-footer__logo" src="img/footer-logo.png" alt="Логотип Cat Energy" width="128" height="24">
     </a>
