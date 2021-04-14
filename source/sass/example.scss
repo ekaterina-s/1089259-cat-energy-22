@@ -1,17 +1,39 @@
 .example {
   background-color: $grey-background;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    // display: flex;
+    // flex-wrap: wrap;
+    // margin-right: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // display: flex;
+    // flex-wrap: wrap;
+    // margin-right: 94px;
+  }
 }
 
 .example__wrapper {
   padding: 0 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 0 30px;
+    background-color: $basic-white;
+  }
 }
 
 .example__title {
   margin: 0;
-  padding: 27px 0 33px 0;
+  padding: 26px 0 33px 0;
   font: 36px/40px $main-font;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 0 63px 0;
+    font: 60px/60px $main-font;
+  }
 }
 
 .example__description {
@@ -20,6 +42,11 @@
   padding-bottom: 25px;
   font: 14px/18px $second-font;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 54px;
+    font: 16px/24px $second-font;
+  }
 }
 
 .example__results {
@@ -35,11 +62,22 @@
 
 .example__result {
   padding: 0;
-  padding-bottom: 14px;
   margin: 0;
   font: 24px/24px $main-font;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font: 30px/37px $main-font;
+  }
+}
+
+.weight {
+  padding: 14px 1px 15px 15px;
+}
+
+.time {
+  padding: 15px 1px 15px 66px;
 }
 
 .example__result--description {
@@ -48,6 +86,10 @@
   font: 12px/12px $second-font;
   color: $special-dark-grey;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font: 14px/14px $second-font;
+  }
 }
 
 .example__results--time {
@@ -63,6 +105,10 @@
   text-align: center;
   color: $basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font: 20px/20px $main-font;
+  }
 }
 
 .example__image {
@@ -75,6 +121,10 @@
   padding: 0;
   margin: 0;
   margin-right: 12px;
+
+  @media (min-width: $tablet-width) {
+    font: 20px/29.6px $main-font;
+  }
 }
 
 .example__after {
@@ -83,4 +133,9 @@
   padding: 0;
   margin: 0;
   margin-left: 12px;
+
+  @media (min-width: $tablet-width) {
+    font: 20px/29.6px $main-font;
+  }
 }
+

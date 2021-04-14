@@ -2,15 +2,23 @@
   font: 20px/20px $main-font;
   color: $basic-black;
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin: 24px 30px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 53px 110px 82px 110px;
+  }
 }
 
 .page-header__logo {
-  display: flex;
-  align-items: center;
-}
+  // display: flex;
+  // align-items: center;
 
-.page-header__logo-image {
-  margin-right: 57px;
+  @media (min-width: $tablet-width) {
+    margin-right: 95px;
+  }
 }
 
 .page-header__bottom {
@@ -26,6 +34,10 @@
   left: 0;
   right: 0;
   bottom: 0;
+
+  @media (min-width: $tablet-width) {
+
+  }
 }
 
 .page-header__bottom::after {
@@ -37,6 +49,10 @@
   left: 0;
   right: 0;
   bottom: 0;
+
+  @media (min-width: $tablet-width) {
+
+  }
 }
 
 .page-header__content {
@@ -51,6 +67,12 @@
   color: $basic-white;
   margin-top: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 207px 41px 87px;
+    font: 60px/60px $main-font;
+    color: $basic-black;
+  }
 }
 
 .page-header__text {
@@ -59,6 +81,12 @@
   margin-top: 0;
   margin-bottom: 29px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 208px 0 337px;
+    font: 20px/20px $main-font;
+    color: $basic-black;
+  }
 }
 
 .page-header__image {
@@ -72,4 +100,8 @@
   right: 20px;
   padding: 11px;
   font: 14px/18px $main-font;
+
+  @media (min-width: $tablet-width) {
+
+  }
 }
