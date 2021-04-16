@@ -7,6 +7,16 @@
   padding: 0 20px 37px 20px;
   font: 36px/36px $main-font;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 54px 70px;
+    font: 60px/60px $main-font;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 56px 110px;
+    font: 60px/60px $main-font;
+  }
 }
 
 .program-choice__text {
@@ -15,4 +25,9 @@
   font: 14px/18px $main-font;
   color: $basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 66px 110px;
+    font: 20px/30px $main-font;
+  }
 }
