@@ -4,12 +4,10 @@
   padding: 0 20px 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
     padding: 0 30px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
     padding: 0 110px 0 110px;
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +20,6 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
     padding: 77px 61px 53px 52px;
   }
 
@@ -50,9 +47,6 @@
 
   @media (min-width: $tablet-width) {
     font: 36px/36px $main-font;
-  }
-
-  @media (min-width: $desktop-width) {
   }
 }
 
@@ -113,10 +107,6 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     font: 20px/29.6px $main-font;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 

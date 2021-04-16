@@ -34,10 +34,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-
-  @media (min-width: $tablet-width) {
-
-  }
 }
 
 .page-header__bottom::after {
@@ -49,10 +45,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-
-  @media (min-width: $tablet-width) {
-
-  }
 }
 
 .page-header__content {
@@ -100,8 +92,4 @@
   right: 20px;
   padding: 11px;
   font: 14px/18px $main-font;
-
-  @media (min-width: $tablet-width) {
-
-  }
 }

@@ -51,19 +51,11 @@
     margin-right: 35px;
     border-bottom: none;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .main-nav__item:last-child {
   @media (min-width: $tablet-width) {
     margin-right: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -81,4 +73,3 @@
     font: 18px/24px $main-font;
   }
 }
-

@@ -10,13 +10,8 @@
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
     padding: 45px 363px 32px 30px;
     font: 60px/60px $main-font;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -27,17 +22,12 @@
   font: 14px/18px $second-font;
   color: $special-dark-grey;
 
-    @media (min-width: $tablet-width) {
-     padding: 0;
-     padding: 0 30px 47px 30px;
-     font: 16px/24px $second-font;
-     display: flex;
-     flex-wrap: wrap;
-    }
-
-    @media (min-width: $desktop-width) {
-
-    }
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 47px 30px;
+    font: 16px/24px $second-font;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__item:not(:last-child) {
