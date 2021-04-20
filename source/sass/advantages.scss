@@ -1,6 +1,13 @@
 .advantages {
+  // padding-top: 15px;
   padding-bottom: 48px;
   border-bottom: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    // padding-top: 15px;
+    padding: 0;
+    // padding-bottom: 47px;
+  }
 }
 
 .advantages__title {
@@ -10,7 +17,7 @@
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 363px 32px 30px;
+    padding: 50px 0 72px 30px;
     font: 60px/60px $main-font;
   }
 }
@@ -23,96 +30,150 @@
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 47px 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 30px 129px 30px;
     font: 16px/24px $second-font;
-    display: flex;
-    flex-wrap: wrap;
+    counter-reset: list-counter;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .advantages__item:not(:last-child) {
   padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 160px;
+  }
+}
+
+.advantages__item:nth-child(3) {
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .advantages__item {
   position: relative;
   padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.advantages__item::after {
+  @media (min-width: $tablet-width) {
+    counter-increment: list-counter;
+    content: counter(list-counter);
+    font: 280px/280px $main-font;
+    color: $basic-grey;
+    position: absolute;
+    top: -36px;
+    right: 134px;
+    z-index: -1;
+  }
+}
+
+.advantages__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+    margin-bottom: 31px;
+    margin-right: 303px;
+  }
+}
+
+.advantages__item--1::before {
+  background-image: url("../img/nutrients.svg");
+
+  @media (min-width: $tablet-width) {
+    // width: 80px;
+    // height: 80px;
+    // background-size: 80px 80px;
+    // padding: 0;
+    // margin-right: 182px;
+    // margin-bottom: 37px;
+  }
+}
+
+.advantages__item--2::before {
+  background-image: url("../img/whey.svg");
+
+  @media (min-width: $tablet-width) {
+    // padding: 0;
+    // margin-right: 79px;
+    // margin-bottom: 37px;
+  }
+}
+
+.advantages__item--3::before {
+  background-image: url("../img/eating.svg");
+
+  @media (min-width: $tablet-width) {
+    // padding: 0;
+    // margin-right: 137px;
+  }
+}
+
+.advantages__item--4::before {
+  background-image: url("../img/results.svg");
+
+  @media (min-width: $tablet-width) {
+    // padding: 0;
+    // margin-right: 75px;
+  }
+}
+
+.advantages__item::before {
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }
 
 .advantages__item:first-child {
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    margin-right: 153px;
-    margin-bottom: 37px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   padding: 0;
+  //   margin-right: 153px;
+  //   margin-bottom: 37px;
+  // }
 }
 
 .advantages__item:nth-child(2) {
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    margin-right: 79px;
-    margin-bottom: 37px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   padding: 0;
+  //   margin-right: 79px;
+  //   margin-bottom: 37px;
+  // }
 }
 
 .advantages__item:nth-child(3) {
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    margin-right: 137px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   padding: 0;
+  //   margin-right: 137px;
+  // }
 }
 
 .advantages__item:last-child {
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    margin-right: 75px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   padding: 0;
+  //   margin-right: 75px;
+  // }
 }
 
-.advantages__item:first-child::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/nutrients.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
 
-.advantages__item:nth-child(2)::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/whey.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.advantages__item:nth-child(3)::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/eating.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.advantages__item:last-child::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/results.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}

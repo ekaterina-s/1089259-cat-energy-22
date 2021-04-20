@@ -1,11 +1,12 @@
 .example {
   background-color: $grey-background;
-  padding-bottom: 25px;
+  padding-bottom: 65px;
 
   @media (min-width: $tablet-width) {
     // display: flex;
     // flex-wrap: wrap;
     // margin-right: 153px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,15 +50,30 @@
   }
 }
 
+.example__container {
+  display: flex;
+  padding-bottom: 46px;
+}
+
 .example__results {
   display: flex;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 138px;
+  }
 }
 
-.example__results--weight {
+.example__results-weight {
   padding: 14px 23px 0 23px;
   margin-right: 31px;
   border: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    // padding: 13px 48px 59px 49px;
+  }
 }
 
 .example__result {
@@ -74,13 +90,23 @@
 
 .weight {
   padding: 14px 1px 15px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    // padding: 15px 57px 20px 57px;
+  }
 }
 
 .time {
   padding: 15px 1px 15px 66px;
+
+  @media (min-width: $tablet-width) {
+    // padding: 15px 30px 20px 71px;
+    padding: 0;
+  }
 }
 
-.example__result--description {
+.example__result-description {
   padding: 0;
   margin: 0;
   font: 12px/12px $second-font;
@@ -92,9 +118,13 @@
   }
 }
 
-.example__results--time {
+.example__results-time {
   padding: 13px 21px 0 21px;
   border: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    // padding: 15px 30px 20px 71px;
+  }
 }
 
 .example__cost {

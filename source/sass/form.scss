@@ -28,7 +28,8 @@
 .form__catdata-textfield {
   margin: 0 0 13px 11px;
   padding: 0;
-  width: 228px;
+  // width: 228px;
+  width: auto;
   height: 45px;
   box-sizing: border-box;
   border: 1px solid $input-color;
@@ -78,7 +79,7 @@
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    font: 20px/29.6px $main-font;
+    font: 20px/30px $main-font;
     margin-bottom: 18px;
   }
 }
@@ -167,6 +168,7 @@
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
+    font: 36px/36px $main-font;
     padding: 0 0 76px 70px;
   }
 
@@ -183,6 +185,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 67px 65px 70px;
+    width: 631px;
+    height: 174px;
   }
 
   @media (min-width: $desktop-width) {
@@ -208,9 +212,13 @@
   padding: 0 20px 21px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 72px 70px;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 0 0 54px 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font: 20px/30px "Oswald", sans-serif;
+    grid-template-rows: auto;
+    align-items: flex-start;
+    place-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -224,6 +232,7 @@
   @media (min-width: $tablet-width) {
     padding: 0 0 57px 0;
     font: 36px/36px $main-font;
+    grid-column: 1/-1;
   }
 }
 
@@ -235,9 +244,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font: 20px/29.6px $main-font;
+    font: 20px/30px $main-font;
     margin-bottom: 32px;
-    margin-right: 123px;
   }
 }
 
@@ -246,6 +254,12 @@
   padding: 7px 78px;
   font: 16px/20px $main-font;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    font: 20px/30px $main-font;
+    padding: 13px 45px;
+    margin: 0 61px 72px 70px;
+  }
 }
 
 .program-choice__obligatory {

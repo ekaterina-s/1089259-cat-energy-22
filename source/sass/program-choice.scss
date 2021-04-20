@@ -26,6 +26,11 @@
   color: $basic-black;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 0 66px 70px;
+    font: 20px/30px $main-font;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0 0 66px 110px;
     font: 20px/30px $main-font;
