@@ -1,5 +1,13 @@
 .program-choice {
-  padding-top: 5px;
+  padding: 27px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 3px 67px 72px 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 110px 66px 110px;
+  }
 }
 
 .program-choice__title {
@@ -9,13 +17,13 @@
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 54px 70px;
     font: 60px/60px $main-font;
+    padding: 0;
+    padding-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 56px 110px;
-    font: 60px/60px $main-font;
+    padding-bottom: 56px;
   }
 }
 
@@ -27,12 +35,12 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 66px 70px;
+    padding: 0;
+    padding-bottom: 66px;
     font: 20px/30px $main-font;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 66px 110px;
-    font: 20px/30px $main-font;
+    padding-bottom: 66px;
   }
 }

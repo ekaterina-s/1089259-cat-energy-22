@@ -8,6 +8,11 @@
     padding: 0;
     // padding-bottom: 47px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    border: none;
+  }
 }
 
 .advantages__title {
@@ -19,6 +24,11 @@
   @media (min-width: $tablet-width) {
     padding: 50px 0 72px 30px;
     font: 60px/60px $main-font;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 72px;
   }
 }
 
@@ -32,13 +42,15 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 30px 129px 30px;
+    padding: 0 30px 105px 30px;
     font: 16px/24px $second-font;
     counter-reset: list-counter;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 230px 246px 248px 250px;
+    grid-column-gap: 94px;
+    padding: 0;
   }
 }
 
@@ -46,12 +58,15 @@
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 160px;
+    padding-bottom: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 127px;
   }
 }
 
 .advantages__item:nth-child(3) {
-
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
   }
@@ -63,6 +78,10 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    // margin-right: 100px;
   }
 }
 
@@ -76,6 +95,10 @@
     top: -36px;
     right: 134px;
     z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
   }
 }
 
@@ -96,6 +119,7 @@
     background-size: 80px 80px;
     margin-bottom: 31px;
     margin-right: 303px;
+    position: static;
   }
 }
 
@@ -111,6 +135,12 @@
     // margin-bottom: 37px;
   }
 }
+
+// .advantages__item--2 {
+//   @media (min-width: $desktop-width) {
+//     margin-right: 79px;
+//   }
+// }
 
 .advantages__item--2::before {
   background-image: url("../img/whey.svg");
@@ -140,9 +170,17 @@
   }
 }
 
-.advantages__item::before {
-  @media (min-width: $tablet-width) {
-    position: static;
+// .advantages__item::before {
+
+// }
+
+.advantages__item-text {
+  margin: 0;
+  padding: 0;
+  max-width: 249px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 250px;
   }
 }
 
@@ -162,12 +200,12 @@
   // }
 }
 
-.advantages__item:nth-child(3) {
-  // @media (min-width: $tablet-width) {
-  //   padding: 0;
-  //   margin-right: 137px;
-  // }
-}
+// .advantages__item:nth-child(3) {
+// @media (min-width: $tablet-width) {
+//   padding: 0;
+//   margin-right: 137px;
+// }
+// }
 
 .advantages__item:last-child {
   // @media (min-width: $tablet-width) {
@@ -175,5 +213,3 @@
   //   margin-right: 75px;
   // }
 }
-
-

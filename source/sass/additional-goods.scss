@@ -1,5 +1,9 @@
 .additional-goods {
   padding: 25px 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 69px 30px;
+  }
 }
 
 .additional-goods__title {
@@ -8,6 +12,10 @@
   margin: 0;
   font: 24px/24px $main-font;
   border-bottom: 1px solid $main-nav-borders;
+
+  @media (min-width: $tablet-width) {
+    font: 36px/36px $main-font;
+  }
 }
 
 .additional-goods__list {
@@ -17,8 +25,12 @@
 }
 
 .additional-goods__item {
-  padding: 13px 0 19px 0;
+  padding: 11px 0 19px 0;
   border-bottom: 1px solid $main-nav-borders;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px 38px;
+  }
 }
 
 .additional-goods__item-title {
@@ -27,11 +39,25 @@
   font: 16px/16px $main-font;
   color: $special-dark-grey;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font: 20px/20px $main-font;
+  }
 }
 
-.additional-goods__item-list {
+.additional-goods__detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   font: 14px/14px $second-font;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font: 16px/20px $second-font;
+  }
+}
+
+.additional-goods__label:nth-child(even) {
+  text-align: right;
 }
 
 .additional-goods__item-link {

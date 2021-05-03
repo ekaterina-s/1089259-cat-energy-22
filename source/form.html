@@ -13,19 +13,32 @@
 <body class="page-body">
   <!-- <img class="test" src="Mobile-form.jpg" alt=""> -->
   <!-- <img class="test" src="Tablet-form.jpg" alt=""> -->
+  <img class="test" src="Desktop-form.jpg" alt="">
   <header class="page-header">
     <div class="main-nav">
       <!-- <div class="container"> -->
       <div class="main-nav__top">
         <a class="page-header__logo" href="index.html">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 1440px)" srcset="img/logotype-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-            <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Логотип Cat Energy" width="34"
-              height="38">
+            <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Логотип Cat Energy">
           </picture>
         </a>
-        <!-- <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button> -->
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+          <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5" />
+            <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5" />
+            <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5" />
+          </svg>
+          <span class="visually-hidden">Закрыть меню</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)"
+              stroke="black" stroke-width="1.5" />
+            <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)"
+              stroke="black" stroke-width="1.5" />
+          </svg>
+        </button>
       </div>
       <!-- <nav class="main-nav__wrapper"> -->
       <ul class="main-nav__list">
@@ -49,69 +62,91 @@
       <h2 class="program-choice__title">Подбор программы</h2>
       <p class="program-choice__text">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
       <form class="program-choice__form form" method="get" action="https://echo.htmlacademy.ru/">
-        <fieldset class="form__catdata">
-          <!-- <div class="container"> -->
-          <legend class="visually-hidden">Данные кота</legend>
-          <label class="form__catdata-label">
-            имя:<sup>*</sup> <input class="form__catdata-textfield" type="text" name="catname" placeholder="Барсик"
-              required>
-          </label>
-          <label class="form__catdata-label">
-            вес (кг):<sup>*</sup> <input class="form__catdata-textfield" type="number" name="catweight" placeholder="7"
-              required>
-          </label>
-          <label class="form__catdata-label">
-            возраст (лет):<sup>*</sup> <input class="form__catdata-textfield" type="number" name="catage"
-              placeholder="7" required>
-          </label>
-          <!-- </div> -->
-        </fieldset>
-        <fieldset class="form__program">
-          <legend class="visually-hidden">Выбор программы</legend>
-          <label class="form__program-label">
-            <input class="form__program-choice" type="radio" checked> похудение
-          </label>
-          <label class="form__program-label">
-            <input class="form__program-choice" type="radio"> набор массы
-          </label>
-          <label class="form__program-label">
-            <input class="form__program-choice" type="radio"> не знаю (нужен ваш совет)
-          </label>
-        </fieldset>
+        <div class="program-choice__container">
+          <fieldset class="form__catdata">
+            <!-- <div class="container"> -->
+            <legend class="visually-hidden">Данные кота</legend>
+            <label class="form__catdata-label">
+              имя:<sup>*</sup> <input class="form__catdata-textfield" type="text" name="catname" placeholder="Барсик"
+                required>
+            </label>
+            <label class="form__catdata-label">
+              вес (кг):<sup>*</sup> <input class="form__catdata-textfield" type="number" name="catweight"
+                placeholder="7" required>
+            </label>
+            <label class="form__catdata-label">
+              возраст (лет):<sup>*</sup> <input class="form__catdata-textfield" type="number" name="catage"
+                placeholder="7" required>
+            </label>
+            <!-- </div> -->
+          </fieldset>
+          <fieldset class="form__program">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <ul class="form__program-list">
+              <li class="form__program-list-item">
+                <input class="visually-hidden form__program-choice" type="radio" name="program" value="choice" id="slim"
+                  checked>
+                <label class="form__program-label" for="slim">похудение</label>
+              </li>
+              <li class="form__program-list-item">
+                <input class="visually-hidden form__program-choice" type="radio" name="program" value="choice"
+                  id="gain">
+                <label class="form__program-label" for="gain">набор массы </label>
+              </li>
+              <li class="form__program-list-item">
+                <input class="visually-hidden form__program-choice" type="radio" name="program" value="choice"
+                  id="dunno">
+                <label class="form__program-label" for="dunno">не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="form__ownerdata">
           <legend class="form__ownerdata-legend">Контактные данные (владельца кота)</legend>
           <label class="form__ownerdata-label">
-            e-mail:<sup>*</sup> <input class="form__ownerdata-textfield" type="email" name="e-mail"
+            e-mail:<sup>*</sup> <input class="form__ownerdata-textfield email" type="email" name="e-mail"
               placeholder="kuklachev@gmail.com" required>
           </label>
           <label class="form__ownerdata-label">
-            телефон:<sup>*</sup> <input class="form__ownerdata-textfield" type="tel" name="phone"
+            телефон:<sup>*</sup> <input class="form__ownerdata-textfield phone" type="tel" name="phone"
               placeholder="8 (960) 900-60-90" required>
           </label>
         </fieldset>
         <fieldset class="form__comment">
           <legend class="form__comment-legend">Комментарий</legend>
-          <textarea class="form__comment-textfield" name="comment" id="textbox" cols="37" rows="10"
+          <textarea class="form__comment-textfield" name="comment" id="textbox" cols="37" rows="9"
             placeholder="расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__additions">
           <legend class="form__additions-legend">Дополнительно</legend>
-          <label class="form__additions-label">
-            <input class="form__additions-choice" type="checkbox"> сахарозаменитель
-          </label>
-          <label class="form__additions-label">
-            <input class="form__additions-choice" type="checkbox"> питьевая вода
-          </label>
-          <label class="form__additions-label">
-            <input class="form__additions-choice" type="checkbox"> молоко
-          </label>
-          <label class="form__additions-label">
-            <input class="form__additions-choice" type="checkbox"> витамины
-          </label>
+          <ul class="form__additions-list">
+            <li class="form__additions-item">
+              <input class="visually-hidden form__additions-choice" type="checkbox" name="addition" value="choice"
+                id="sweetener">
+              <label class="form__additions-label" for="sweetener">сахарозаменитель</label>
+            </li>
+            <li class="form__additions-item">
+              <input class="visually-hidden form__additions-choice" type="checkbox" name="addition"
+                value="choice" id="water">
+              <label class="form__additions-label" for="water">питьевая вода</label>
+            </li>
+            <li class="form__additions-item">
+              <input class="visually-hidden form__additions-choice" type="checkbox" name="addition"
+                value="choice" id="milk">
+              <label class="form__additions-label" for="milk">молоко</label>
+            </li>
+            <li class="form__additions-item">
+              <input class="visually-hidden form__additions-choice" type="checkbox" name="addition"
+                value="choice" id="vitamins">
+              <label class="form__additions-label" for="vitamins">витамины</label>
+            </li>
+          </ul>
         </fieldset>
-        <button class="button form__button" type="submit">отправить заявку</button>
+        <div class="form__container">
+          <button class="button form__button" type="submit">отправить заявку</button>
+          <p class="program-choice__obligatory"><sup>*</sup> &mdash; Обязательные поля</p>
+        </div>
       </form>
-      <p class="program-choice__obligatory"><sup>*</sup> &mdash; Обязательные поля</p>
     </section>
   </main>
   <footer class="page-footer">
@@ -121,12 +156,12 @@
     </div>
     <picture>
       <source media="(min-width: 1200px)" srcset="img/location-desktop.jpg">
-      <source media="(min-width: 798px)" srcset="img/location-tablet.jpg">
+      <source media="(min-width: 768px)" srcset="img/location-tablet.jpg">
       <img class="page-footer__location" src="img/location.jpg" alt="Расположение Cat Energy на карте">
     </picture>
     <div class="page-footer__container">
       <a class="page-footer__link" href="index.html">
-        <img class="page-footer__logo" src="img/footer-logo.png" alt="Логотип Cat Energy" width="128" height="24">
+        <img class="page-footer__logo" src="img/footer-logo.svg" alt="Логотип Cat Energy">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -140,7 +175,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7.98438 0.0625C9.31771 0.0625 10.4062 0.078125 11.25 0.109375C11.9688 0.140625 12.6094 0.265625 13.1719 0.484375C13.7135 0.692708 14.1823 0.994792 14.5781 1.39062C14.974 1.78646 15.276 2.25521 15.4844 2.79687C15.7031 3.35937 15.8281 4 15.8594 4.71875C15.8906 5.5625 15.9062 6.65104 15.9062 7.98437C15.9062 9.31771 15.8906 10.4062 15.8594 11.25C15.8281 11.9687 15.7031 12.6094 15.4844 13.1719C15.276 13.7135 14.974 14.1823 14.5781 14.5781C14.1823 14.974 13.7135 15.276 13.1719 15.4844C12.6094 15.7031 11.9688 15.8281 11.25 15.8594C10.4062 15.8906 9.31771 15.9062 7.98438 15.9062C6.65104 15.9062 5.5625 15.8906 4.71875 15.8594C4 15.8281 3.35938 15.7031 2.79688 15.4844C2.25521 15.276 1.78646 14.974 1.39062 14.5781C0.994792 14.1823 0.692708 13.7135 0.484375 13.1719C0.265625 12.6094 0.140625 11.9687 0.109375 11.25C0.078125 10.4062 0.0625 9.31771 0.0625 7.98437C0.0625 6.65104 0.078125 5.5625 0.109375 4.71875C0.140625 4 0.265625 3.35937 0.484375 2.79687C0.692708 2.25521 0.994792 1.78646 1.39062 1.39062C1.78646 0.994792 2.25521 0.692708 2.79688 0.484375C3.35938 0.265625 4 0.140625 4.71875 0.109375C5.5625 0.078125 6.65104 0.0625 7.98438 0.0625ZM7.98438 1.09375C6.59896 1.09375 5.46875 1.10937 4.59375 1.14062C4.03125 1.16146 3.51042 1.26042 3.03125 1.4375C2.28125 1.75 1.75 2.28125 1.4375 3.03125C1.26042 3.51042 1.16146 4.03125 1.14062 4.59375C1.10938 5.46875 1.09375 6.59896 1.09375 7.98437C1.09375 9.36979 1.10938 10.5 1.14062 11.375C1.16146 11.9375 1.26042 12.4583 1.4375 12.9375C1.75 13.6875 2.28125 14.2187 3.03125 14.5312C3.51042 14.7083 4.03125 14.8073 4.59375 14.8281C5.46875 14.8594 6.59896 14.875 7.98438 14.875C9.36979 14.875 10.5 14.8594 11.375 14.8281C11.9375 14.8073 12.4583 14.7083 12.9375 14.5312C13.6875 14.2187 14.2188 13.6875 14.5312 12.9375C14.7083 12.4583 14.8073 11.9375 14.8281 11.375C14.8594 10.5 14.875 9.36979 14.875 7.98437C14.875 6.59896 14.8594 5.46875 14.8281 4.59375C14.8073 4.03125 14.7083 3.51042 14.5312 3.03125C14.2188 2.28125 13.6875 1.75 12.9375 1.4375C12.4583 1.26042 11.9375 1.16146 11.375 1.14062C10.5 1.10937 9.36979 1.09375 7.98438 1.09375ZM7.98438 11.1562C8.85938 11.1562 9.60677 10.8464 10.2266 10.2266C10.8464 9.60677 11.1562 8.85937 11.1562 7.98437C11.1562 7.10937 10.8464 6.36198 10.2266 5.74219C9.60677 5.1224 8.85938 4.8125 7.98438 4.8125C7.10938 4.8125 6.36198 5.1224 5.74219 5.74219C5.1224 6.36198 4.8125 7.10937 4.8125 7.98437C4.8125 8.85937 5.1224 9.60677 5.74219 10.2266C6.36198 10.8464 7.10938 11.1562 7.98438 11.1562ZM7.98438 3.92187C9.10938 3.92187 10.0677 4.31771 10.8594 5.10937C11.651 5.90104 12.0469 6.85937 12.0469 7.98437C12.0469 9.10937 11.651 10.0677 10.8594 10.8594C10.0677 11.651 9.10938 12.0469 7.98438 12.0469C6.85938 12.0469 5.90104 11.651 5.10938 10.8594C4.31771 10.0677 3.92188 9.10937 3.92188 7.98437C3.92188 6.85937 4.31771 5.90104 5.10938 5.10937C5.90104 4.31771 6.85938 3.92187 7.98438 3.92187ZM13.1719 3.76562C13.1719 4.02604 13.0781 4.2474 12.8906 4.42969C12.7031 4.61198 12.474 4.70312 12.2031 4.70312C11.9427 4.70312 11.7214 4.61198 11.5391 4.42969C11.3568 4.2474 11.2656 4.02604 11.2656 3.76562C11.2656 3.49479 11.3568 3.26562 11.5391 3.07812C11.7214 2.89062 11.9427 2.79687 12.2031 2.79687C12.4635 2.79687 12.6901 2.89323 12.8828 3.08594C13.0755 3.27865 13.1719 3.50521 13.1719 3.76562Z"
@@ -149,7 +184,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M16.5 1.83325H13.75C12.5344 1.83325 11.3686 2.30674 10.5091 3.14957C9.64956 3.99239 9.16667 5.1355 9.16667 6.32743V9.02394H6.41667V12.6193H9.16667V19.81H12.8333V12.6193H15.5833L16.5 9.02394H12.8333V6.32743C12.8333 6.08905 12.9299 5.86042 13.1018 5.69186C13.2737 5.52329 13.5069 5.4286 13.75 5.4286H16.5V1.83325Z"
@@ -161,7 +196,13 @@
       </div>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <!-- здесь будет лого HTML Academy!!! -->
+        <a class="copyright__logo" href="https://htmlacademy.ru/">
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+              fill="#666666" />
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
