@@ -24,9 +24,20 @@
   padding: 0;
   margin: 0;
   margin-right: 12px;
+  border: none;
+  background: none;
 
   @media (min-width: $tablet-width) {
     font: 20px/30px $main-font;
+    border-bottom: 1px dotted $basic-black;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $basic-black;
+  }
+
+  &:active {
+    border: none;
   }
 }
 
@@ -36,10 +47,21 @@
   padding: 0;
   margin: 0;
   margin-left: 12px;
+  border: none;
+  background: none;
 
   @media (min-width: $tablet-width) {
     font: 20px/30px $main-font;
     margin-left: 20px;
+    border-bottom: 1px dotted $basic-black;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $basic-black;
+  }
+
+  &:active {
+    border: none;
   }
 }
 
