@@ -364,7 +364,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-bottom: 40px;
+    padding-bottom: 12px;
     // display: flex;
     // flex-wrap: wrap;
     font: 20px/30px $main-font;
@@ -402,8 +402,9 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-right: 123px;
-    margin-bottom: 32px;
+    margin-bottom: 23px;
+    margin-bottom: 46px;
+    margin-right: 0;
     width: 50%;
   }
 
@@ -412,6 +413,12 @@
     width: 25%;
   }
 }
+
+// .form__additions-item:nth-child(even) {
+//   @media (min-width: $tablet-width) {
+//     margin-right: 0;
+//   }
+// }
 
 .form__additions-label {
   display: block;
@@ -427,6 +434,8 @@
 
   @media (min-width: $tablet-width) {
     font: 20px/30px $main-font;
+    margin: 0;
+    margin-left: 60px;
     // margin-bottom: 32px;
     // width: 50%;
   }
@@ -500,6 +509,11 @@
     padding: 13px 65px;
     margin: 0;
     margin-right: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 207px;
+    margin-right: 81px;
   }
 }
 
