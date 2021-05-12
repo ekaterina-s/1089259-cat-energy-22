@@ -70,6 +70,11 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+  margin-left: -13px;
+  //двигать цифры
+  }
 }
 
 .advantages__item {

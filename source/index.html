@@ -13,8 +13,8 @@
 
 <body class="page-body">
   <!-- <img class="test" src="Mobile.jpg" alt=""> -->
-  <!-- <img class="test" src="Tablet.jpg" alt=""> -->
-  <!-- <img class="test" src="Desktop.png" alt=""> -->
+  <!-- <img hidden class="test" src="Tablet.jpg" alt=""> -->
+  <img class="test" src="Desktop.png" alt="">
   <header class="page-header">
     <div class="main-nav">
       <!-- <div class="container"> -->
@@ -63,7 +63,7 @@
         <a class="button page-header__link" href="form.html">подобрать программу</a>
         <picture>
           <source media="(min-width: 1200px)" srcset="img/chicken-food-desktop.png">
-          <source media="(min-width: 768px)" srcset="img/chicken-food-tablet.jpg">
+          <source media="(min-width: 768px)" srcset="img/chicken-food-tablet.png">
           <img class="page-header__image" src="img/chicken-food-index.png" alt="питание со вкусом курицы">
         </picture>
       </div>
@@ -116,25 +116,25 @@
     </section>
     <section class="example">
       <div class="example__wrapper">
-        <h2 class="example__title">Живой пример</h2>
-        <!-- <div class="test"> -->
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат
-          без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <div class="example__container">
-          <div class="example__results">
-            <div class="example__results-weight">
-              <p class="example__result">5 кг</p>
-              <p class="example__result-description">снижение веса</p>
+        <div class="test1">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim. Отличный результат
+            без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <div class="example__container">
+            <div class="example__results">
+              <div class="example__result-item">
+                <p class="example__result">5 кг</p>
+                <p class="example__result-description">снижение веса</p>
+              </div>
+              <div class="example__result-item">
+                <p class="example__result">60 дней</p>
+                <p class="example__result-description">затрачено времени</p>
+              </div>
             </div>
-            <div class="example__results-period">
-              <p class="example__result">60 дней</p>
-              <p class="example__result-description">затрачено времени</p>
-            </div>
+            <p class="example__cost"><span class="example__text">Затраты на питание:</span> 15 000 РУБ.</p>
           </div>
-          <p class="example__cost"><span class="example__text">Затраты на питание:</span> 15 000 РУБ.</p>
         </div>
-      <!-- </div> -->
         <div class="example__slider">
           <div class="example__slide">
             <picture>
@@ -147,7 +147,7 @@
           <div class="example__range">
             <!-- <p class="example__before">было</p> -->
             <button class="example__before">было</button>
-            <input class="example__scale" type="range">
+            <div class="example__scale"><div style="--scale-move: 0" class="example__scale-point"></div></div>
             <button class="example__after">стало</button>
             <!-- <p class="example__after">стало</p> -->
             <!-- <div class="example__toggle" tabindex="0"></div> -->

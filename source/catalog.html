@@ -12,7 +12,8 @@
 
 <body class="page-body">
   <!-- <img class="test" src="Mobile-catalog.jpg" alt=""> -->
-  <img class="test" src="Tablet-catalog.png" alt="">
+  <!-- <img class="test" src="Tablet-catalog.png" alt=""> -->
+  <img class="test" src="Desktop-catalog.png" alt="">
   <header class="page-header">
     <div class="main-nav">
       <!-- <div class="container"> -->
@@ -42,13 +43,13 @@
       <!-- <nav class="main-nav__wrapper"> -->
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__item-link" href="index.html">главная</a>
+          <a class="main-nav__item-link black" href="index.html">главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__item-link" href="catalog.html">каталог продукции</a>
+          <a class="main-nav__item-link black" href="catalog.html">каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__item-link" href="form.html">подбор программы</a>
+          <a class="main-nav__item-link black" href="form.html">подбор программы</a>
         </li>
       </ul>
       <!-- </nav> -->
@@ -202,7 +203,7 @@
               <p class="main-food__label">Масса</p>
               <p class="main-food__label">500 г</p>
               <p class="main-food__label">Вкус</p>
-              <p class="main-food__label">Гречка</p>
+              <p class="main-food__label">Рис</p>
               <p class="main-food__label">Цена</p>
               <p class="main-food__label">500 Р</p>
             </div>
@@ -239,38 +240,47 @@
       <p class="main-food__more-tastes">На самом деле вкусов гораздо больше!</p>
       <a class="main-food__link-more" href="#">показать все</a> -->
     </section>
+    <div class="test3">
     <section class="additional-goods">
       <h3 class="additional-goods__title">Дополнительные товары</h3>
       <ul class="additional-goods__list">
         <li class="additional-goods__item">
-          <h6 class="additional-goods__item-title">сахарозаменитель</h6>
-          <div class="additional-goods__detail">
-            <p class="additional-goods__label">1 упаковка (100 г)</p>
-            <p class="additional-goods__label">200 Р.</p>
+          <div class="test2">
+            <h6 class="additional-goods__item-title">сахарозаменитель</h6>
+            <div class="additional-goods__detail">
+              <p class="additional-goods__label">1 упаковка (100 г)</p>
+              <p class="additional-goods__label">200 Р.</p>
+            </div>
           </div>
           <a class="button additional-goods__item-link" href="#">заказать</a>
         </li>
         <li class="additional-goods__item">
-          <h6 class="additional-goods__item-title">питьевая вода</h6>
-          <div class="additional-goods__detail">
-            <p class="additional-goods__label">5 литров</p>
-            <p class="additional-goods__label">50 Р.</p>
+          <div class="test2">
+            <h6 class="additional-goods__item-title">питьевая вода</h6>
+            <div class="additional-goods__detail">
+              <p class="additional-goods__label">5 литров</p>
+              <p class="additional-goods__label">50 Р.</p>
+            </div>
           </div>
           <a class="button additional-goods__item-link" href="#">заказать</a>
         </li>
         <li class="additional-goods__item">
-          <h6 class="additional-goods__item-title">молоко</h6>
-          <div class="additional-goods__detail">
-            <p class="additional-goods__label">1 литр</p>
-            <p class="additional-goods__label">100 Р.</p>
+          <div class="test2">
+            <h6 class="additional-goods__item-title">молоко</h6>
+            <div class="additional-goods__detail">
+              <p class="additional-goods__label">1 литр</p>
+              <p class="additional-goods__label">100 Р.</p>
+            </div>
           </div>
           <a class="button additional-goods__item-link" href="#">заказать</a>
         </li>
         <li class="additional-goods__item">
-          <h6 class="additional-goods__item-title">витамины</h6>
-          <div class="additional-goods__detail">
-            <p class="additional-goods__label">1 упаковка (30 г)</p>
-            <p class="additional-goods__label">300 Р.</p>
+          <div class="test2">
+            <h6 class="additional-goods__item-title">витамины</h6>
+            <div class="additional-goods__detail">
+              <p class="additional-goods__label">1 упаковка (30 г)</p>
+              <p class="additional-goods__label">300 Р.</p>
+            </div>
           </div>
           <a class="button additional-goods__item-link" href="#">заказать</a>
         </li>
@@ -304,12 +314,14 @@
           <p class="bonus__text">Закажите все и получите чехол для кота в подарок!</p>
         </div>
         <picture>
+          <source media="(min-width: 1200px)" srcset="img/bonus-image-desktop.png">
           <source media="(min-width: 768px)" srcset="img/bonus-image-tablet.png">
           <img class="bonus__image" src="img/bonus-image.png" alt="кот в чехле">
         </picture>
 
       </div>
     </section>
+  </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__contacts contacts">

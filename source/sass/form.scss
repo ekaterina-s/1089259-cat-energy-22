@@ -20,8 +20,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 80px;
     padding: 0;
+    width: 50%;
   }
 }
 
@@ -194,6 +194,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     padding-bottom: 44px;
+    gap: 80px;
   }
 }
 
@@ -232,7 +233,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 78px;
+    width: 50%;
   }
 }
 
@@ -263,7 +264,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 78px;
+    width: 100%
   }
 
   &::placeholder {
@@ -277,22 +278,14 @@
   }
 }
 
-.email {
+.form__ownerdata-textfield--email {
   background: url("../img/icon-send.svg") no-repeat right 18px center;
   background-size: 18px 13px;
-
-  @media (min-width: $desktop-width) {
-    width: 50%;
-  }
 }
 
-.phone {
+.form__ownerdata-textfield--phone {
   background: url("../img/icon-phone.svg") no-repeat right 15px center;
   background-size: 20px 20px;
-
-  @media (min-width: $desktop-width) {
-    width: 50%;
-  }
 }
 
 .form__comment {
@@ -529,4 +522,23 @@
     padding-top: 11px;
     font: 16px/16px $second-font;
   }
+}
+
+
+
+
+.form__additions-item{
+  box-sizing: border-box;
+}
+
+.form__additions-item:nth-child(even) {
+  padding-left: 33px;
+}
+
+.form__additions-choice + label::before{
+  left: -63px;
+}
+
+.form__additions-label{
+  position: relative;
 }
