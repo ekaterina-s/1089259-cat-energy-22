@@ -264,7 +264,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%
+    width: 100%;
   }
 
   &::placeholder {
@@ -357,7 +357,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
     // display: flex;
     // flex-wrap: wrap;
     font: 20px/30px $main-font;
@@ -374,7 +374,7 @@
   padding-bottom: 41px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 57px 0;
+    padding: 0 0 63px 0;
     font: 36px/36px $main-font;
     flex-grow: 1;
   }
@@ -393,9 +393,9 @@
 
 .form__additions-item {
   position: relative;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
     margin-bottom: 46px;
     margin-right: 0;
     width: 50%;
@@ -404,6 +404,12 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     width: 25%;
+  }
+}
+
+.form__additions-item:nth-child(even) {
+  @media (min-width: $tablet-width) {
+    padding-left: 33px;
   }
 }
 
@@ -429,6 +435,7 @@
     font: 20px/30px $main-font;
     margin: 0;
     margin-left: 60px;
+    position: relative;
     // margin-bottom: 32px;
     // width: 50%;
   }
@@ -436,6 +443,24 @@
   @media (min-width: $desktop-width) {
     // margin: 0;
     // width: 25%;
+  }
+}
+
+.label-2 {
+  @media (min-width: $desktop-width) {
+    margin-left: 47px;
+  }
+}
+
+.label-3 {
+  @media (min-width: $desktop-width) {
+    margin-left: 99px;
+  }
+}
+
+.label-4 {
+  @media (min-width: $desktop-width) {
+    margin-left: 87px;
   }
 }
 
@@ -460,8 +485,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
+    left: -60px;
   }
 }
 
@@ -522,23 +548,24 @@
     padding-top: 11px;
     font: 16px/16px $second-font;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
+  }
 }
 
+// .form__additions-item{
+//   box-sizing: border-box;
+// }
 
+// .form__additions-item:nth-child(even) {
+//   padding-left: 33px;
+// }
 
+// .form__additions-choice + label::before{
+//   left: -63px;
+// }
 
-.form__additions-item{
-  box-sizing: border-box;
-}
-
-.form__additions-item:nth-child(even) {
-  padding-left: 33px;
-}
-
-.form__additions-choice + label::before{
-  left: -63px;
-}
-
-.form__additions-label{
-  position: relative;
-}
+// .form__additions-label{
+//   position: relative;
+// }

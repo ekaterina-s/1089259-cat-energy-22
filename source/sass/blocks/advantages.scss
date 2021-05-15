@@ -72,8 +72,7 @@
   }
 
   @media (min-width: $desktop-width) {
-  margin-left: -13px;
-  //двигать цифры
+    margin-left: -13px;
   }
 }
 
@@ -87,6 +86,12 @@
 
   @media (min-width: $desktop-width) {
     // margin-right: 100px;
+  }
+}
+
+.advantages__item--4 {
+  @media (min-width: $desktop-width) {
+    margin-left: -31px;
   }
 }
 
@@ -104,6 +109,29 @@
 
   @media (min-width: $desktop-width) {
     right: 0;
+  }
+}
+
+.advantages__item--1::after {
+  @media (min-width: $tablet-width) {
+    top: -37px;
+    right: 152px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
+  }
+}
+
+.advantages__item--3::after {
+  @media (min-width: $desktop-width) {
+    right: 14px;
+  }
+}
+
+.advantages__item--4::after {
+  @media (min-width: $desktop-width) {
+    right: 32px;
   }
 }
 

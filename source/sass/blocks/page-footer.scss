@@ -18,7 +18,7 @@
 
   display: flex;
   align-items: stretch;
-  justify-content: space-between;
+  // justify-content: space-between;
   padding: 31px 20px 24px 20px;
 
   @media (min-width: $tablet-width) {
@@ -32,6 +32,7 @@
     top: 95px;
     background-color: $basic-white;
     width: 35%;
+    padding: 65px 36px 61px 30px;
   }
 }
 
@@ -44,16 +45,23 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font: 20px/21px $main-font;
-    margin: 0 20px 0 41px;
+    font: 20px/22px $main-font;
+    margin: 0 304px 0 41px;
+    width: 171px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 81px;
+    margin-left: 45px;
   }
 }
 
-.contacts__break {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
+// .contacts__break {
+//   @media (min-width: $tablet-width) {
+//     display: none;
+//   }
+// }
 
 .contacts__address {
   margin: 0;
@@ -65,6 +73,20 @@
   @media (min-width: $tablet-width) {
     font: 16px/20px $second-font;
     margin-right: 42px;
+    text-align: right;
+    width: 159px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.contacts__address-street {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 18px;
+    display: block;
   }
 }
 
@@ -86,12 +108,12 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 57px 30px 0 30px;
+    padding: 61px 30px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    padding: 57px 110px 0 110px;
+    padding: 61px 110px 0 110px;
   }
 }
 

@@ -1,7 +1,6 @@
-.test3 {
+.wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
     padding: 0 110px 86px 110px;
   }
 }
@@ -15,9 +14,14 @@
     flex-grow: 1;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-right: 80px;
+    max-width: none;
+  }
 }
 
-.test2 {
+.additional-goods__wrapper {
   padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
@@ -26,11 +30,6 @@
     align-items: center;
     flex-grow: 1;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
-
 }
 
 .additional-goods__title {
@@ -66,9 +65,9 @@
     padding: 26px 38px 28px 38px;
   }
 
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
-    padding-left: 0;
+    padding: 26px 0 0 0;
     width: 100%;
   }
 }
@@ -83,10 +82,9 @@
 
   @media (min-width: $tablet-width) {
     font: 20px/20px $main-font;
+    flex-grow: 1;
     // margin-right: 246px;
   }
-//desktop
-  flex-grow: 1;
 }
 
 .additional-goods__detail {
@@ -97,18 +95,18 @@
 
   @media (min-width: $tablet-width) {
     font: 16px/20px $second-font;
-    margin-top: 5px;
+    margin-top: -10px;
     // grid-template-columns: 181px 44px;
     display: flex;
     justify-content: flex-end;
     text-align: right;
-
   }
 }
 
 .additional-goods__label:nth-child(odd) {
   margin: 0;
   padding: 0;
+
   @media (min-width: $tablet-width) {
     margin-right: 55px;
   }

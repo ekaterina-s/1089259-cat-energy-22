@@ -3,7 +3,7 @@
   padding-top: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 193px;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,7 +36,7 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 81px 283px 53px 52px;
+    padding: 78px 283px 53px 52px;
     margin-bottom: 30px;
     position: relative;
   }
@@ -49,7 +49,7 @@
 
 .programs__item:last-child {
   @media (min-width: $tablet-width) {
-    padding: 79px 314px 53px 52px;
+    padding: 82px 314px 53px 52px;
     margin-bottom: 0;
   }
 
@@ -154,7 +154,7 @@
   @media (min-width: $tablet-width) {
     font: 16px/24px $second-font;
     padding: 0;
-    padding-bottom: 55px;
+    padding-bottom: 53px;
     border-bottom: none;
   }
 
