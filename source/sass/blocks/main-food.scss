@@ -54,9 +54,10 @@
 .main-food__item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 18px 20px 25px 20px;
+  padding: 17px 20px 25px 20px;
   color: $main-food-item-titles;
   background-color: $basic-white;
+  border-bottom: 1px solid $border-color;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
@@ -72,7 +73,12 @@
     padding-left: 40px;
     padding-right: 33px;
     padding-bottom: 40px;
+    border: none;
   }
+}
+
+.main-food__item:last-child {
+  border: none;
 }
 
 .main-food__img {
@@ -91,7 +97,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -105px;
-    margin-bottom: 44px;
+    margin-bottom: 45px;
     height: 223px;
     width: 168px;
   }
@@ -119,7 +125,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 29px;
+    padding-bottom: 27px;
   }
 }
 
@@ -134,7 +140,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 7px;
-    margin-bottom: 6px;
+    margin-bottom: 7px;
   }
 }
 
@@ -187,6 +193,7 @@
   display: block;
   padding: 18px 20px 0 20px;
   box-sizing: border-box;
+  border: none;
 
   @media (min-width: $tablet-width) {
     background: none;
@@ -197,6 +204,7 @@
   @media (min-width: $desktop-width) {
     // padding: 51px 38px 40px 38px;
     padding: 0;
+    border: 1px solid $border-color;
   }
 }
 
@@ -215,7 +223,7 @@
     padding-top: 51px;
     padding-left: 55px;
     padding-right: 56px;
-    padding-bottom: 46px;
+    padding-bottom: 49px;
   }
 }
 

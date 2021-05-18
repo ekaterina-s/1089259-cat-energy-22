@@ -16,6 +16,37 @@ img {
   text-transform: uppercase;
 }
 
+.decor{
+  position: relative;
+}
+
+.decor__wrap{
+  background-color: $basic-white;
+  padding-right: 22px;
+  position: relative;
+  display: inline-block;
+  @media (min-width: $tablet-width) {
+    padding-left: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -38px;
+  }
+}
+
+.decor:before{
+  content: ' ';
+  height: 2px;
+  background-color: $basic-green;
+  width: 200vw;
+  top: 50%;
+  left: 0;
+  position: absolute;
+  @media (min-width: $tablet-width) {
+    left: -100vw;
+  }
+}
+
 .test {
   position: absolute;
   top: 0;
@@ -24,4 +55,10 @@ img {
   pointer-events: none;
   opacity: 0.5;
   z-index: 5;
+}
+
+.form__catdata-textfield::-webkit-inner-spin-button,
+.form__catdata-textfield::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin:0;
 }
