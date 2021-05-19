@@ -24,10 +24,6 @@
     padding: 0 0 165px 0;
     border: none;
   }
-
-  @media (min-width: $desktop-width) {
-    // padding: 0 0 84px 0;
-  }
 }
 
 .main-food__list {
@@ -153,7 +149,6 @@
   grid-column: 1/-1;
 
   padding: 10px 109px;
-  // margin: 0 20px;
   font: 16px/20px $main-font;
 
   @media (min-width: $tablet-width) {
@@ -200,9 +195,8 @@
     border: 2px solid $basic-grey;
     padding: 18px 36px 0 36px;
   }
-  // margin: 25px 145px 23px 145px;
+
   @media (min-width: $desktop-width) {
-    // padding: 51px 38px 40px 38px;
     padding: 0;
     border: 1px solid $border-color;
   }
@@ -249,7 +243,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 52px 23px 48px;
-    // padding: 0;
   }
 }
 
@@ -278,7 +271,6 @@
   color: $special-dark-grey;
   text-transform: uppercase;
   text-align: center;
-  // margin: 0 20px;
   padding: 10px 94px;
   background-color: $basic-grey;
 

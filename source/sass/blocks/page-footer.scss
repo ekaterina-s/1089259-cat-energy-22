@@ -1,29 +1,20 @@
 .page-footer {
-  // padding: 28px 0 22px 0;
   position: relative;
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
-    // padding: 66px 0 61px 0;
   }
 }
-
-
-// .page-footer__wrapper {
-//   background-color: $basic-grey;
-// }
 
 .page-footer__contacts {
 
   display: flex;
   align-items: stretch;
-  // justify-content: space-between;
   padding: 31px 20px 24px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 65px 30px 56px 30px;
-    // position: absolute;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,12 +47,6 @@
     margin-left: 45px;
   }
 }
-
-// .contacts__break {
-//   @media (min-width: $tablet-width) {
-//     display: none;
-//   }
-// }
 
 .contacts__address {
   margin: 0;
@@ -143,10 +128,6 @@
   }
 }
 
-.page-footer__social {
-  // padding: 20px 0 21px 0;
-}
-
 .social__list {
   margin: 0;
   padding: 20px 73px;
@@ -167,7 +148,6 @@
 }
 
 .social__item {
-
   @media (min-width: $tablet-width) {
     height: 40px;
     display: flex;
