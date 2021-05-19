@@ -4,24 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>Cat Energy. Функциональное питание для котов</title>
+  <link rel="shortcut icon" href="../source/img/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
-  <!-- <img class="test" src="img/Mobile.jpg" alt=""> -->
-  <!-- <img class="test" src="img/Tablet.jpg" alt=""> -->
-  <img class="test" src="img/Desktop.png" alt="">
-
-  <!-- <picture>
-    <source media="(min-width: 1440px)" srcset="Desktop.png">
-    <source media="(min-width: 768px)" srcset="Tablet.jpg">
-    <img class="test" src="img/Mobile.jpg" alt="Mobile.jpg">
-  </picture> -->
   <header class="page-header">
     <div class="main-nav">
-      <!-- <div class="container"> -->
       <div class="main-nav__top">
         <a class="page-header__logo" href="index.html" title="Логотип Cat Energy">
           <picture>
@@ -47,7 +38,6 @@
           </svg>
         </button>
       </div>
-      <!-- <nav class="main-nav__wrapper"> -->
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__item-link" href="index.html">главная</a>
@@ -59,7 +49,6 @@
           <a class="main-nav__item-link" href="form.html">подбор программы</a>
         </li>
       </ul>
-      <!-- </nav> -->
     </div>
     <div class="page-header__bottom">
       <div class="page-header__content">
@@ -76,8 +65,6 @@
         </picture>
       </div>
     </div>
-    <!-- </div> -->
-    <!-- </div> -->
   </header>
   <main class="page-main">
     <section class="programs">
@@ -146,23 +133,20 @@
         <div class="example__slider">
           <div class="example__slide">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png, img/cat-before-tablet@2x.png 2x">
-              <!-- <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png"> -->
+              <source media="(min-width: 1440px)"
+                srcset="img/image-cat-desktop.png 1x, img/image-cat-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/image-cat-tablet.png 1x, img/image-cat-tablet@2x.png 2x">
               <img class="example__image" src="img/cat-before.png" srcset="img/cat-before@2x.png 2x" alt="кот до диеты">
             </picture>
           </div>
           <div class="example__range">
-            <!-- <p class="example__before">было</p> -->
             <button class="example__before">было</button>
             <div class="example__scale">
               <div style="--scale-move: 0" class="example__scale-point"></div>
             </div>
             <div class="example__toggle" tabindex="0"></div>
             <button class="example__after">стало</button>
-            <!-- <p class="example__after">стало</p> -->
-            <!-- <div class="example__toggle" tabindex="0"></div> -->
           </div>
-
         </div>
       </div>
     </section>
