@@ -1,0 +1,13 @@
+.decor::before {
+  content: " ";
+  height: 2px;
+  background-color: $basic-green;
+  width: 200vw;
+  top: 50%;
+  left: 0;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    left: -100vw;
+  }
+}

@@ -1,12 +1,9 @@
 .advantages {
-  // padding-top: 15px;
   padding-bottom: 48px;
   border-bottom: 1px solid $border-color;
 
   @media (min-width: $tablet-width) {
-    // padding-top: 15px;
     padding: 0;
-    // padding-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,10 +80,6 @@
   @media (min-width: $tablet-width) {
     padding-left: 0;
   }
-
-  @media (min-width: $desktop-width) {
-    // margin-right: 100px;
-  }
 }
 
 .advantages__item--4 {
@@ -158,54 +151,19 @@
 
 .advantages__item--1::before {
   background-image: url("../img/nutrients.svg");
-
-  @media (min-width: $tablet-width) {
-    // width: 80px;
-    // height: 80px;
-    // background-size: 80px 80px;
-    // padding: 0;
-    // margin-right: 182px;
-    // margin-bottom: 37px;
-  }
 }
-
-// .advantages__item--2 {
-//   @media (min-width: $desktop-width) {
-//     margin-right: 79px;
-//   }
-// }
 
 .advantages__item--2::before {
   background-image: url("../img/whey.svg");
-
-  @media (min-width: $tablet-width) {
-    // padding: 0;
-    // margin-right: 79px;
-    // margin-bottom: 37px;
-  }
 }
 
 .advantages__item--3::before {
   background-image: url("../img/eating.svg");
-
-  @media (min-width: $tablet-width) {
-    // padding: 0;
-    // margin-right: 137px;
-  }
 }
 
 .advantages__item--4::before {
   background-image: url("../img/results.svg");
-
-  @media (min-width: $tablet-width) {
-    // padding: 0;
-    // margin-right: 75px;
-  }
 }
-
-// .advantages__item::before {
-
-// }
 
 .advantages__item-text {
   margin: 0;
@@ -215,34 +173,4 @@
   @media (min-width: $desktop-width) {
     max-width: 250px;
   }
-}
-
-.advantages__item:first-child {
-  // @media (min-width: $tablet-width) {
-  //   padding: 0;
-  //   margin-right: 153px;
-  //   margin-bottom: 37px;
-  // }
-}
-
-.advantages__item:nth-child(2) {
-  // @media (min-width: $tablet-width) {
-  //   padding: 0;
-  //   margin-right: 79px;
-  //   margin-bottom: 37px;
-  // }
-}
-
-// .advantages__item:nth-child(3) {
-// @media (min-width: $tablet-width) {
-//   padding: 0;
-//   margin-right: 137px;
-// }
-// }
-
-.advantages__item:last-child {
-  // @media (min-width: $tablet-width) {
-  //   padding: 0;
-  //   margin-right: 75px;
-  // }
 }

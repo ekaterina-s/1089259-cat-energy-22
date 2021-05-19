@@ -1,15 +1,6 @@
 .page-header {
   font: 20px/20px $main-font;
   color: $basic-black;
-  // padding-bottom: 22px;
-
-  // @media (min-width: $tablet-width) {
-  //   padding-bottom: 64px;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   padding-bottom: 82px;
-  // }
 }
 
 .page-header__logo {
@@ -77,14 +68,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // display: block;
-    // height: 694px;
-    // position: absolute;
-    // top: 0;
-    // right: 0;
-    // left: auto;
-    // bottom: auto;
-    // width: 50%;
     display: block;
     height: 700px;
     position: absolute;
@@ -103,9 +86,7 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    // padding: 0 20px 0 87px
     padding: 0;
-    // padding-left: 117px;
   }
 
   @media (min-width: $desktop-width) {
@@ -199,7 +180,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    // position: static;
     display: block;
     font: 20px/20px $main-font;
     padding: 16px 26px;
