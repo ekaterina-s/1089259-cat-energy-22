@@ -133,9 +133,11 @@
 .additional-goods__detail--pack{
   @media (min-width: $tablet-width) {
     margin-right: 49px;
+    margin-left: auto;
     max-width: 132px;
     @media (min-width: $desktop-width) {
       margin-right: 0;
+      margin-left: 0;
       margin-bottom: 0;
       max-width: 244px;
       flex-grow: 1;

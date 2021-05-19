@@ -19,11 +19,12 @@ const sync = require("browser-sync").create();
 const styles = () => {
   return gulp.src('./source/sass/style.scss')
     .pipe(sass.sync().on('error', sass.logError))
-    .pipe(sourcemap.init())
+
     .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
+    .pipe(sourcemap.init())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
