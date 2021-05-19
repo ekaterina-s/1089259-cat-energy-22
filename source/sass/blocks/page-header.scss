@@ -1,0 +1,220 @@
+.page-header {
+  font: 20px/20px $main-font;
+  color: $basic-black;
+  // padding-bottom: 22px;
+
+  // @media (min-width: $tablet-width) {
+  //   padding-bottom: 64px;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   padding-bottom: 82px;
+  // }
+}
+
+.page-header__logo {
+  @media (min-width: $tablet-width) {
+    margin-right: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 536px;
+  }
+}
+
+.page-header__bottom {
+  position: relative;
+  margin-bottom: 177px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 111px;
+    position: static;
+  }
+}
+
+.page-header__bottom::before {
+  content: "";
+  background: url("../img/programs-header-cat-mobile.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/programs-header-cat-mobile@2x.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/programs-header-cat-desktop.jpg") no-repeat right center/cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/programs-header-cat-desktop@2x.jpg");
+    }
+  }
+}
+
+.page-header__bottom::after {
+  content: "";
+  background-color: rgba($basic-green, 0.85);
+  box-shadow: 0 4px 4px rgba($basic-black, 0.25);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.page-header__bottom::after,
+.page-header__bottom::before {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    // display: block;
+    // height: 694px;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // left: auto;
+    // bottom: auto;
+    // width: 50%;
+    display: block;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    bottom: auto;
+    width: 50vw;
+  }
+}
+
+.page-header__content {
+  padding: 27px 20px 0 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    // padding: 0 20px 0 87px
+    padding: 0;
+    // padding-left: 117px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    position: static;
+    padding-left: 190px;
+    max-width: 414px;
+  }
+}
+
+.page-header__title {
+  font: 36px/36px $main-font;
+  color: $basic-white;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-bottom: 41px;
+    padding-left: 117px;
+    font: 60px/60px $main-font;
+    color: $basic-black;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 40px;
+  }
+}
+
+.page-header__text {
+  font: 14px/14px $main-font;
+  color: $basic-white;
+  margin: 0 0 29px 0;
+  padding: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 22px;
+    padding-left: 117px;
+    font: 20px/20px $main-font;
+    color: $basic-black;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.page-header__image {
+  margin-bottom: -137px;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+    margin-top: -82px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    margin: 0;
+    position: absolute;
+    top: 141px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    margin-left: 115px;
+  }
+}
+
+.page-header__link {
+  position: absolute;
+  bottom: -179px;
+  left: 20px;
+  right: 20px;
+  padding: 11px;
+  font: 14px/18px $main-font;
+
+  &:hover {
+    background-color: $green-button-hover;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    // position: static;
+    display: block;
+    font: 20px/20px $main-font;
+    padding: 16px 26px;
+    margin-left: 112px;
+    width: 193px;
+    left: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 17px 26px;
+    margin-left: 0;
+  }
+}

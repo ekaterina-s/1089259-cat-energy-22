@@ -1,0 +1,46 @@
+.program-choice {
+  padding: 27px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 3px 67px 72px 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 110px 82px 110px;
+  }
+}
+
+.program-choice__title {
+  margin: 0;
+  padding: 0 20px 37px 20px;
+  font: 36px/36px $main-font;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font: 60px/60px $main-font;
+    padding: 0;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 56px;
+  }
+}
+
+.program-choice__text {
+  margin: 0;
+  padding: 0 20px 39px 20px;
+  font: 14px/18px $main-font;
+  color: $basic-black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 66px;
+    font: 20px/30px $main-font;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 66px;
+  }
+}
