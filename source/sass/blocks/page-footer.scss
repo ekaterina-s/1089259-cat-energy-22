@@ -23,7 +23,7 @@
     top: 95px;
     background-color: $basic-white;
     width: 35%;
-    padding: 65px 36px 61px 30px;
+    padding: 62px 36px 61px 30px;
   }
 }
 
@@ -36,15 +36,13 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font: 20px/22px $main-font;
+    font: 20px/23px $main-font;
     margin: 0 304px 0 41px;
     width: 171px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    margin-right: 81px;
-    margin-left: 45px;
+    margin: 6px 81px 0 45px;
   }
 }
 
@@ -98,7 +96,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    padding: 61px 110px 0 110px;
+    padding: 63px 110px 0 110px;
   }
 }
 

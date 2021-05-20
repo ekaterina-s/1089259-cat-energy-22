@@ -280,7 +280,7 @@
   }
 
   &:focus {
-    border: 2px solid $special-dark-grey;
+    border: 1px solid $special-dark-grey;
     outline: none;
   }
 
@@ -416,7 +416,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 61px;
+    padding-bottom: 66px;
   }
 }
 
