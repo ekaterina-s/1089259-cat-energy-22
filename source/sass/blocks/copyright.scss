@@ -1,0 +1,44 @@
+.copyright {
+  padding: 29px 0;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.copyright__link {
+  display: block;
+  text-decoration: none;
+  font: 16px/18px $second-font;
+  color: $special-dark-grey;
+  margin-right: 139px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+  }
+}
+
+.copyright__logo {
+  margin-top: -7px;
+  color: $current-color;
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    color: $basic-green;
+  }
+
+  &:active {
+    color: $basic-green;
+    opacity: 0.3;
+  }
+}
+
+.copyright__logo svg {
+  fill: currentColor;
+}

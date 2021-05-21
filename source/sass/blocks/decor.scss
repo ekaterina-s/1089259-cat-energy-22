@@ -1,3 +1,22 @@
+.decor {
+  position: relative;
+}
+
+.decor__wrap {
+  background-color: $basic-white;
+  padding-right: 22px;
+  position: relative;
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -38px;
+  }
+}
+
 .decor::before {
   content: " ";
   height: 2px;

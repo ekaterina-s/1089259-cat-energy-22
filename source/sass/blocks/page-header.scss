@@ -3,16 +3,6 @@
   color: $basic-black;
 }
 
-.page-header__logo {
-  @media (min-width: $tablet-width) {
-    margin-right: 95px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 536px;
-  }
-}
-
 .page-header__bottom {
   position: relative;
   margin-bottom: 177px;
@@ -170,14 +160,6 @@
   right: 20px;
   padding: 11px;
   font: 14px/18px $main-font;
-
-  &:hover {
-    background-color: $green-button-hover;
-  }
-
-  &:active {
-    color: rgba($basic-white, 0.3);
-  }
 
   @media (min-width: $tablet-width) {
     display: block;

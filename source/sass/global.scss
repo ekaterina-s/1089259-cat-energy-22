@@ -1,5 +1,13 @@
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 img {
@@ -14,31 +22,14 @@ img {
   color: $basic-white;
   text-align: center;
   text-transform: uppercase;
-}
 
-.decor {
-  position: relative;
-}
-
-.decor__wrap {
-  background-color: $basic-white;
-  padding-right: 22px;
-  position: relative;
-  display: inline-block;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 37px;
+  &:hover {
+    background-color: $green-button-hover;
   }
 
-  @media (min-width: $desktop-width) {
-    margin-left: -38px;
+  &:active {
+    color: rgba($basic-white, 0.3);
   }
-}
-
-.form__catdata-textfield::-webkit-inner-spin-button,
-.form__catdata-textfield::-webkit-outer-spin-button {
-  appearance: none;
-  margin: 0;
 }
 
 .green-line {

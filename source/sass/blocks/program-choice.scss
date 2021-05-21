@@ -10,6 +10,15 @@
   }
 }
 
+.program-choice__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+}
+
 .program-choice__title {
   margin: 0;
   padding: 0 20px 37px 20px;
@@ -42,5 +51,23 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 66px;
+  }
+}
+
+.program-choice__obligatory {
+  margin: 0;
+  padding: 0 80px 31px 80px;
+  text-align: center;
+  font: 14px/16px $second-font;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 11px;
+    font: 16px/16px $second-font;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
   }
 }
