@@ -13,23 +13,20 @@
   }
 }
 
-.example::after,
 .example::before {
+  @media (min-width: $tablet-width) {
+    background-color: $grey-background;
+  }
+
   @media (min-width: $desktop-width) {
     content: "";
     position: absolute;
+    width: 100vw;
+    left: 50%;
     top: 134px;
     bottom: 0;
-    right: 394px;
-    background-color: $basic-grey;
-    width: 200vw;
-  }
-}
-
-.example::before {
-  @media (min-width: $desktop-width) {
-    left: calc(100% - 394px);
-    background-color: $grey-background;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, $basic-grey calc(50% + 325px), $basic-grey, 50%, $grey-background);
   }
 }
 
@@ -153,9 +150,13 @@
 
   @media (min-width: $tablet-width) {
     font: 14px/14px $second-font;
-    background-color: $basic-grey;
+    background-color: $basic-white;
     width: 128px;
     margin-bottom: -8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey-background;
   }
 }
 
