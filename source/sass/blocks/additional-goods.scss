@@ -34,6 +34,11 @@
 
 .additional-goods__title::before {
   margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 200vw;
+    margin-left: -50vw;
+  }
 }
 
 .additional-goods__list {

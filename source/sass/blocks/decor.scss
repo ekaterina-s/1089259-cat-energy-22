@@ -1,6 +1,11 @@
 .decor {
   position: relative;
-  width: 100%;
+  // width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    // width: 111%;
+  }
 }
 
 .decor::before {
@@ -24,11 +29,11 @@
 
   @media (min-width: $tablet-width) {
     // left: -100vw;
-    // width: 100vw;
+    width: 100vw;
     left: 50%;
     // margin-left: calc(-50vw + 37px);
 
-    width: 200vw;
+    // width: 200vw;
     margin-left: -50vw;
   }
 
