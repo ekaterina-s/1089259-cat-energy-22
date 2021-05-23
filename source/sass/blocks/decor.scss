@@ -1,5 +1,35 @@
 .decor {
   position: relative;
+  width: 100%;
+}
+
+.decor::before {
+  // content: " ";
+  // height: 2px;
+  // background-color: $basic-green;
+  // width: 200vw;
+  // top: 50%;
+  // left: 0;
+  // position: absolute;
+
+  content: " ";
+  height: 2px;
+  background-color: $basic-green;
+  width: 100vw;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-left: -50vw;
+
+  @media (min-width: $tablet-width) {
+    // left: -100vw;
+    margin-left: calc(-50vw + 37px);
+  }
+
+  @media (min-width: $desktop-width) {
+    // left: -100vw;
+    margin-left: -50vw;
+  }
 }
 
 .decor__wrap {
@@ -15,19 +45,5 @@
 
   @media (min-width: $desktop-width) {
     margin-left: -38px;
-  }
-}
-
-.decor::before {
-  content: " ";
-  height: 2px;
-  background-color: $basic-green;
-  width: 200vw;
-  top: 50%;
-  left: 0;
-  position: absolute;
-
-  @media (min-width: $tablet-width) {
-    left: -100vw;
   }
 }
