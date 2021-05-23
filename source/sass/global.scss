@@ -43,13 +43,3 @@ img {
     border-bottom: 2px solid $basic-white;
   }
 }
-
-.test {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  pointer-events: none;
-  opacity: 0.5;
-  z-index: 5;
-}

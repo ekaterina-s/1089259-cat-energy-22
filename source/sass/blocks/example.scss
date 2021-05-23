@@ -16,16 +16,17 @@
 .example::before {
   @media (min-width: $tablet-width) {
     background-color: $grey-background;
-  }
-
-  @media (min-width: $desktop-width) {
     content: "";
     position: absolute;
     width: 100vw;
     left: 50%;
-    top: 134px;
+    top: 619px;
     bottom: 0;
     transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 134px;
     background: linear-gradient(to right, $basic-grey calc(50% + 325px), $basic-grey, 50%, $grey-background);
   }
 }
