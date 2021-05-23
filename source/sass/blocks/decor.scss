@@ -24,14 +24,17 @@
 
   @media (min-width: $tablet-width) {
     // left: -100vw;
-    width: 100vw;
+    // width: 100vw;
     left: 50%;
-    margin-left: calc(-50vw + 37px);
+    // margin-left: calc(-50vw + 37px);
+
+    width: 200vw;
+    margin-left: -50vw;
   }
 
   @media (min-width: $desktop-width) {
     // left: -100vw;
-    margin-left: -50vw;
+    // margin-left: -50vw;
   }
 }
 
